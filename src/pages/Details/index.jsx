@@ -10,7 +10,9 @@ export function Details/*TODO COMPONENTE PRECISA COMEÇAR COM LETRA MAIÚSCULA *
       <h1>Hello World!</h1>
       <span>Jonathan</span>
 
-      <Button/>
+      <Button title="Login" loading/>
+      <Button title="Cadastrar"/>
+      <Button title="Voltar"/>
     </Container>
   )
 } 
