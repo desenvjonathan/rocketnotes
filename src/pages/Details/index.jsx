@@ -1,4 +1,6 @@
 import { Container } from './styles.js'
+import { Button } from '../../components/Button'
+
 export function Details/*TODO COMPONENTE PRECISA COMEÇAR COM LETRA MAIÚSCULA */(){
   
   return(
@@ -7,6 +9,8 @@ export function Details/*TODO COMPONENTE PRECISA COMEÇAR COM LETRA MAIÚSCULA *
     <Container>
       <h1>Hello World!</h1>
       <span>Jonathan</span>
+
+      <Button/>
     </Container>
   )
 } 
