@@ -1,8 +1,10 @@
 import { Container, Links } from './styles.js'
+
 import { Header } from '../../components/Header'
-import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
 import { Section } from '../../components/Section'
 import { Tag } from '../../components/Tag'
+import { Button } from '../../components/Button'
 
 export function Details/*TODO COMPONENTE PRECISA COMEÇAR COM LETRA MAIÚSCULA */(){
   
@@ -12,6 +14,8 @@ export function Details/*TODO COMPONENTE PRECISA COMEÇAR COM LETRA MAIÚSCULA *
     <Container>
       <Header/>
       
+      <ButtonText title="Excluir Nota"/>
+
       <Section title="Links úteis">
         <Links>
           <li>
