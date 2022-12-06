@@ -3,13 +3,14 @@ import { Input } from "../../components/Input"
 import { TextArea } from "../../components/TextArea"
 import { NoteItem } from "../../components/NoteItem"
 import { Section } from "../../components/Section"
+import { Button } from "../../components/Button"
 
 import { Container, Form } from "./styles"
 
 export function New() {
   return (
     <Container>
-      <Header/>
+      <Header />
 
       <main>
         <Form>
@@ -18,13 +19,21 @@ export function New() {
             <a href="/">Voltar</a>
           </header>
 
-          <Input placeholder="Título"/>
-          <TextArea placeholder="Observações"/>
+          <Input placeholder="Título" />
+          <TextArea placeholder="Observações" />
 
           <Section title="Links úteis">
-            <NoteItem value="https://github.com/desenvjonathan"/>
-            <NoteItem isNew placeholder="Novo link"/>
+            <NoteItem value="https://github.com/desenvjonathan" />
+            <NoteItem isNew placeholder="Novo link" />
           </Section>
+
+          <Section title="Marcadores">
+            <div className="tags">
+              <NoteItem value="React" />
+              <NoteItem isNew placeholder="Nova tag" />
+            </div>
+          </Section>
+          <Button title="Salvar" />
         </Form>
       </main>
     </Container>
